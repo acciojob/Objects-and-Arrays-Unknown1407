@@ -14,6 +14,17 @@ window.person = person;
 window.team = team;
 window.team1 = team1;
 window.cap1 = cap1;
+
 let team = players;
-let team1 = team;
-let cap1 = person;
+
+let team1 = [];
+for(let i=0;i<players.length;i++)
+	{
+		team1.push(players[i]);
+	}
+
+let cap1 = {};
+for(let i in person)
+	{
+		cap1[i] = person[i];
+	}
